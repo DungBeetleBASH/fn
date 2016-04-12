@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pappa/fn.git"
+    "url": "git+https://github.com/DungBeetleBASH/fn.git"
   },
   "keywords": [
     "functional",
@@ -17,9 +17,9 @@
   "author": "Pappa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pappa/fn/issues"
+    "url": "https://github.com/DungBeetleBASH/fn/issues"
   },
-  "homepage": "https://github.com/Pappa/fn#readme",
+  "homepage": "https://github.com/DungBeetleBASH/fn#readme",
   "devDependencies": {
     "jasmine-node": "^1.14.5"
   }
