@@ -4,7 +4,7 @@
   "description": "Functional programming utility",
   "main": "fn.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_packages/.bin/jasmine-node test"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Pappa/fn/issues"
   },
-  "homepage": "https://github.com/Pappa/fn#readme"
+  "homepage": "https://github.com/Pappa/fn#readme",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
 }
