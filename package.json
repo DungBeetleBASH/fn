@@ -1,0 +1,23 @@
+{
+  "name": "@dbb/fn",
+  "version": "0.0.1",
+  "description": "Functional programming utility",
+  "main": "fn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pappa/fn.git"
+  },
+  "keywords": [
+    "functional",
+    "javascript"
+  ],
+  "author": "Pappa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pappa/fn/issues"
+  },
+  "homepage": "https://github.com/Pappa/fn#readme"
+}
