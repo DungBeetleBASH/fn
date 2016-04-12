@@ -8,14 +8,17 @@ describe("fn tests", function() {
 		multiplyByThree = function (n) {
 			return n * 3;
 		},
+		multiply = function (n1, n2) {
+			return n1 * n2;
+		},
 		addThreeNumbers = function (n1, n2, n3) {
 			return n1 + n2 + n3;
-		};
+		},
+		stringArray = ["first", "second", "third"];
 
 	describe("compose()", function() {
 		it("Performs right to left function composition", function() {
-			var expected = 15,
-				composed = fn.compose(multiplyByThree, addOne);
+			var composed = fn.compose(multiplyByThree, addOne);
 			expect(composed(4)).toBe(15);
 		});
 	});
@@ -39,51 +42,56 @@ describe("fn tests", function() {
 
 	describe("fork()", function() {
 		it("Returns a function for performing a forking operation", function() {
-			
+			var forked = fn.fork(multiply, multiplyByThree, addOne);
+			expect(forked(4)).toBe(60);
 		});
 	});
 
 	describe("partial()", function() {
 		it("Creates a partially applied function", function() {
-			
+			var multiplyByTwo = fn.partial(multiply, 2);
+			expect(multiplyByTwo(25)).toBe(50);
 		});
 	});
 
 	describe("pipe()", function() {
 		it("Performs left to right function composition", function() {
-			var expected = 15,
-				composed = fn.pipe(addOne, multiplyByThree);
+			var composed = fn.pipe(addOne, multiplyByThree);
 			expect(composed(4)).toBe(15);
 		});
 	});
 
 	describe("previousIndex()", function() {
 		it("Returns the previous index in an array in a cyclic manner", function() {
-			
+			expect(fn.previousIndex(stringArray, 2)).toBe(1);
+			expect(fn.previousIndex(stringArray, 0)).toBe(2);
 		});
 	});
 
 	describe("nextIndex()", function() {
 		it("Returns the next index in an array in a cyclic manner", function() {
-			
+			expect(fn.nextIndex(stringArray, 2)).toBe(0);
+			expect(fn.nextIndex(stringArray, 0)).toBe(1);
 		});
 	});
 
 	describe("previous()", function() {
 		it("Returns the previous element in an array in a cyclic manner", function() {
-			
+			expect(fn.previous(stringArray, 2)).toBe("second");
+			expect(fn.previous(stringArray, 0)).toBe("third");
 		});
 	});
 
 	describe("next()", function() {
 		it("Returns the next element in an array in a cyclic manner", function() {
-			
+			expect(fn.next(stringArray, 2)).toBe("first");
+			expect(fn.next(stringArray, 0)).toBe("second");
 		});
 	});
 
 	describe("last()", function() {
 		it("Returns the last element in an array", function() {
-			
+			expect(fn.last(stringArray)).toBe("third");
 		});
 	});
 
