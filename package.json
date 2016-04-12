@@ -4,7 +4,7 @@
   "description": "Functional programming utility",
   "main": "fn.js",
   "scripts": {
-    "test": "./node_packages/.bin/jasmine-node test"
+    "test": "./node_modules/.bin/jasmine-node --matchall test/*.js *.js"
   },
   "repository": {
     "type": "git",

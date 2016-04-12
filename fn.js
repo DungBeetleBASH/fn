@@ -116,7 +116,7 @@ var fn = (function () {
 		 * @method last
 		 * @param {Array} arr
 		 */
-		last: function (arr, index) {
+		last: function (arr) {
 			return arr[arr.length - 1];
 		}
 
