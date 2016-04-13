@@ -8,7 +8,7 @@ var fn = (function () {
 		/**
 		 * Performs right to left function composition
 		 * @method compose
-		 * @param {...Function}
+		 * @param {...Function} arguments
 		 * @return {Function}
 		 */
 		compose: function () {
@@ -18,7 +18,7 @@ var fn = (function () {
 		/**
 		 * Create a curried function
 		 * @method curry
-		 * @param {Function}
+		 * @param {Function} func
 		 * @return {Function}
 		 */
 		curry: function (func) {
@@ -62,7 +62,7 @@ var fn = (function () {
 		/**
 		 * Performs left to right function composition
 		 * @method pipe
-		 * @param {...Function}
+		 * @param {...Function} arguments
 		 * @return {Function}
 		 */
 		pipe: function () {

@@ -1,47 +1,43 @@
 # fn
 A small functional programming utility library for JavaScript.
 
-# Docs
+## Docs
 
 * * *
 
-### compose() 
+### compose(arguments) 
 
 Performs right to left function composition
 
 **Parameters**
 
-**compose**: `function`, Performs right to left function composition
+**arguments**: `function`
 
 **Returns**: `function`
 
 
-### curry() 
+### curry(func) 
 
 Create a curried function
 
 **Parameters**
 
-**curry**: `function`, Create a curried function
+**func**: `function`
 
 **Returns**: `function`
 
 
 ### fork(lastly, func1, func2) 
 
-Returns a function for performing a forking operation
-Also known as "converge"
+Returns a function for performing a forking/convergence operation
 
 **Parameters**
 
-**lastly**: `function`, Returns a function for performing a forking operation
-Also known as "converge"
+**lastly**: `function`
 
-**func1**: `function`, Returns a function for performing a forking operation
-Also known as "converge"
+**func1**: `function`
 
-**func2**: `function`, Returns a function for performing a forking operation
-Also known as "converge"
+**func2**: `function`
 
 **Returns**: `function`
 
@@ -52,20 +48,20 @@ Create a partially applied function
 
 **Parameters**
 
-**func**: `function`, Create a partially applied function
+**func**: `function`
 
-**arguments**: `*`, Create a partially applied function
+**arguments**: `*`
 
 **Returns**: `function`
 
 
-### pipe() 
+### pipe(arguments) 
 
 Performs left to right function composition
 
 **Parameters**
 
-**pipe**: `function`, Performs left to right function composition
+**arguments**: `function`
 
 **Returns**: `function`
 
@@ -76,9 +72,9 @@ Returns the previous index in an array in a cyclic manner
 
 **Parameters**
 
-**arr**: `Array`, Returns the previous index in an array in a cyclic manner
+**arr**: `Array`
 
-**index**: `Number`, Returns the previous index in an array in a cyclic manner
+**index**: `Number`
 
 **Returns**: `Number`
 
@@ -89,9 +85,9 @@ Returns the next index in an array in a cyclic manner
 
 **Parameters**
 
-**arr**: `Array`, Returns the next index in an array in a cyclic manner
+**arr**: `Array`
 
-**index**: `Number`, Returns the next index in an array in a cyclic manner
+**index**: `Number`
 
 **Returns**: `Number`
 
@@ -102,9 +98,9 @@ Returns the previous element in an array in a cyclic manner
 
 **Parameters**
 
-**arr**: `Array`, Returns the previous element in an array in a cyclic manner
+**arr**: `Array`
 
-**index**: `Number`, Returns the previous element in an array in a cyclic manner
+**index**: `Number`
 
 **Returns**: `*`
 
@@ -115,9 +111,9 @@ Returns the next element in an array in a cyclic manner
 
 **Parameters**
 
-**arr**: `Array`, Returns the next element in an array in a cyclic manner
+**arr**: `Array`
 
-**index**: `Number`, Returns the next element in an array in a cyclic manner
+**index**: `Number`
 
 **Returns**: `*`
 
@@ -128,7 +124,7 @@ Returns the last element in an array
 
 **Parameters**
 
-**arr**: `Array`, Returns the last element in an array
+**arr**: `Array`
 
 **Returns**: `*`
 
