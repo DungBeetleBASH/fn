@@ -34,8 +34,7 @@ var fn = (function () {
 		},
 
 		/**
-		 * Returns a function for performing a forking operation
-		 * Also known as "converge"
+		 * Returns a function for performing a forking/convergence operation
 		 * @method fork
 		 * @param {Function} lastly
 		 * @param {Function} func1
@@ -52,7 +51,7 @@ var fn = (function () {
 		 * Create a partially applied function
 		 * @method partial
 		 * @param {Function} func
-		 * @param {...*} arguments
+		 * @param {...Mixed} arguments
 		 * @return {Function}
 		 */
 		partial: function (func) {
@@ -104,7 +103,7 @@ var fn = (function () {
 		 * @method previous
 		 * @param {Array} arr
 		 * @param {Number} index
-		 * @return {*}
+		 * @return {Mixed}
 		 */
 		previous: function (arr, index) {
 			return arr[this.previousIndex(arr, index)];
@@ -115,7 +114,7 @@ var fn = (function () {
 		 * @method next
 		 * @param {Array} arr
 		 * @param {Number} index
-		 * @return {*}
+		 * @return {Mixed}
 		 */
 		next: function (arr, index) {
 			return arr[this.nextIndex(arr, index)];
@@ -125,7 +124,7 @@ var fn = (function () {
 		 * Returns the last element in an array
 		 * @method last
 		 * @param {Array} arr
-		 * @return {*}
+		 * @return {Mixed}
 		 */
 		last: function (arr) {
 			return arr[arr.length - 1];
