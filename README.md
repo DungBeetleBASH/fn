@@ -1,4 +1,4 @@
-# fn
+# @dbb/fn
 A small functional programming utility library for Node.js.
 
 [![Build Status](https://travis-ci.org/DungBeetleBASH/strike.png)](https://travis-ci.org/DungBeetleBASH/fn)
