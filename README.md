@@ -1,8 +1,7 @@
 # fn
 A small functional programming utility library for Node.js.
 
-[![Build Status](https://travis-ci.org/DungBeetleBASH/strike.png)](https://travis-ci.org/DungBeetleBASH/fn) 
-[![Coverage Status](https://coveralls.io/repos/github/DungBeetleBASH/fn/badge.svg?branch=master)](https://coveralls.io/github/DungBeetleBASH/fn?branch=master)
+[![Build Status](https://travis-ci.org/DungBeetleBASH/strike.png)](https://travis-ci.org/DungBeetleBASH/fn)
 
 ## Installation
 
