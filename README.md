@@ -72,32 +72,6 @@ Performs left to right function composition
 **Returns**: `Function`
 
 
-### previousIndex(arr, index) 
-
-Returns the previous index in an array in a cyclic manner
-
-**Parameters**
-
-**arr**: `Array`
-
-**index**: `Number`
-
-**Returns**: `Number`
-
-
-### nextIndex(arr, index) 
-
-Returns the next index in an array in a cyclic manner
-
-**Parameters**
-
-**arr**: `Array`
-
-**index**: `Number`
-
-**Returns**: `Number`
-
-
 ### previous(arr, index) 
 
 Returns the previous element in an array in a cyclic manner
