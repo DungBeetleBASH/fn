@@ -5,15 +5,15 @@ A small functional programming utility library for JavaScript.
 
 * * *
 
-### compose(arguments) 
+### compose() 
 
 Performs right to left function composition
 
 **Parameters**
 
-**arguments**: `function`
+**arguments**: `...Function`
 
-**Returns**: `function`
+**Returns**: `Function`
 
 
 ### curry(func) 
@@ -22,9 +22,9 @@ Create a curried function
 
 **Parameters**
 
-**func**: `function`
+**func**: `Function`
 
-**Returns**: `function`
+**Returns**: `Function`
 
 
 ### fork(lastly, func1, func2) 
@@ -33,37 +33,37 @@ Returns a function for performing a forking/convergence operation
 
 **Parameters**
 
-**lastly**: `function`
+**lastly**: `Function`
 
-**func1**: `function`
+**func1**: `Function`
 
-**func2**: `function`
+**func2**: `Function`
 
-**Returns**: `function`
+**Returns**: `Function`
 
 
-### partial(func, arguments) 
+### partial(func) 
 
 Create a partially applied function
 
 **Parameters**
 
-**func**: `function`
+**func**: `Function`
 
-**arguments**: `*`
+**arguments**: `...Mixed`
 
-**Returns**: `function`
+**Returns**: `Function`
 
 
-### pipe(arguments) 
+### pipe() 
 
 Performs left to right function composition
 
 **Parameters**
 
-**arguments**: `function`
+**arguments**: `...Function`
 
-**Returns**: `function`
+**Returns**: `Function`
 
 
 ### previousIndex(arr, index) 
@@ -102,7 +102,7 @@ Returns the previous element in an array in a cyclic manner
 
 **index**: `Number`
 
-**Returns**: `*`
+**Returns**: `Mixed`
 
 
 ### next(arr, index) 
@@ -115,7 +115,7 @@ Returns the next element in an array in a cyclic manner
 
 **index**: `Number`
 
-**Returns**: `*`
+**Returns**: `Mixed`
 
 
 ### last(arr) 
@@ -126,7 +126,7 @@ Returns the last element in an array
 
 **arr**: `Array`
 
-**Returns**: `*`
+**Returns**: `Mixed`
 
 
 
