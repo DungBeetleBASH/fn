@@ -3,6 +3,14 @@ var fn = (function () {
 
 	var slice = [].slice;
 
+	function previousIndex(arr, index) {
+		return (index + arr.length - 1) % arr.length;
+	}
+
+	function nextIndex(arr, index) {
+		return (index + 1) % arr.length;
+	}
+
 	return {
 
 		/**
@@ -77,28 +85,6 @@ var fn = (function () {
 		},
 
 		/**
-		 * Returns the previous index in an array in a cyclic manner
-		 * @method previousIndex
-		 * @param {Array} arr
-		 * @param {Number} index
-		 * @return {Number}
-		 */
-		previousIndex: function (arr, index) {
-			return (index + arr.length - 1) % arr.length;
-		},
-
-		/**
-		 * Returns the next index in an array in a cyclic manner
-		 * @method nextIndex
-		 * @param {Array} arr
-		 * @param {Number} index
-		 * @return {Number}
-		 */
-		nextIndex: function (arr, index) {
-			return (index + 1) % arr.length;
-		},
-
-		/**
 		 * Returns the previous element in an array in a cyclic manner
 		 * @method previous
 		 * @param {Array} arr
@@ -106,7 +92,7 @@ var fn = (function () {
 		 * @return {Mixed}
 		 */
 		previous: function (arr, index) {
-			return arr[this.previousIndex(arr, index)];
+			return arr[previousIndex(arr, index)];
 		},
 
 		/**
@@ -117,7 +103,7 @@ var fn = (function () {
 		 * @return {Mixed}
 		 */
 		next: function (arr, index) {
-			return arr[this.nextIndex(arr, index)];
+			return arr[nextIndex(arr, index)];
 		},
 
 		/**

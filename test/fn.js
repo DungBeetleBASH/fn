@@ -61,20 +61,6 @@ describe("fn tests", function() {
 		});
 	});
 
-	describe("previousIndex()", function() {
-		it("Returns the previous index in an array in a cyclic manner", function() {
-			expect(fn.previousIndex(stringArray, 2)).toBe(1);
-			expect(fn.previousIndex(stringArray, 0)).toBe(2);
-		});
-	});
-
-	describe("nextIndex()", function() {
-		it("Returns the next index in an array in a cyclic manner", function() {
-			expect(fn.nextIndex(stringArray, 2)).toBe(0);
-			expect(fn.nextIndex(stringArray, 0)).toBe(1);
-		});
-	});
-
 	describe("previous()", function() {
 		it("Returns the previous element in an array in a cyclic manner", function() {
 			expect(fn.previous(stringArray, 2)).toBe("second");
