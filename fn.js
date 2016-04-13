@@ -8,6 +8,7 @@ var fn = (function () {
 		/**
 		 * Performs right to left function composition
 		 * @method compose
+		 * @param {...Function}
 		 * @return {Function}
 		 */
 		compose: function () {
@@ -17,6 +18,7 @@ var fn = (function () {
 		/**
 		 * Create a curried function
 		 * @method curry
+		 * @param {Function}
 		 * @return {Function}
 		 */
 		curry: function (func) {
@@ -35,6 +37,9 @@ var fn = (function () {
 		 * Returns a function for performing a forking operation
 		 * Also known as "converge"
 		 * @method fork
+		 * @param {Function} lastly
+		 * @param {Function} func1
+		 * @param {Function} func2
 		 * @return {Function}
 		 */
 		fork: function (lastly, func1, func2) {
@@ -46,6 +51,8 @@ var fn = (function () {
 		/**
 		 * Create a partially applied function
 		 * @method partial
+		 * @param {Function} func
+		 * @param {...*} arguments
 		 * @return {Function}
 		 */
 		partial: function (func) {
@@ -54,7 +61,8 @@ var fn = (function () {
 
 		/**
 		 * Performs left to right function composition
-		 * @method compose
+		 * @method pipe
+		 * @param {...Function}
 		 * @return {Function}
 		 */
 		pipe: function () {
@@ -96,6 +104,7 @@ var fn = (function () {
 		 * @method previous
 		 * @param {Array} arr
 		 * @param {Number} index
+		 * @return {*}
 		 */
 		previous: function (arr, index) {
 			return arr[this.previousIndex(arr, index)];
@@ -106,6 +115,7 @@ var fn = (function () {
 		 * @method next
 		 * @param {Array} arr
 		 * @param {Number} index
+		 * @return {*}
 		 */
 		next: function (arr, index) {
 			return arr[this.nextIndex(arr, index)];
@@ -115,6 +125,7 @@ var fn = (function () {
 		 * Returns the last element in an array
 		 * @method last
 		 * @param {Array} arr
+		 * @return {*}
 		 */
 		last: function (arr) {
 			return arr[arr.length - 1];

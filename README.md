@@ -1,5 +1,5 @@
 # fn
-Functional programming utility
+A small functional programming utility library for JavaScript.
 
 # Docs
 
@@ -9,6 +9,10 @@ Functional programming utility
 
 Performs right to left function composition
 
+**Parameters**
+
+**compose**: `function`, Performs right to left function composition
+
 **Returns**: `function`
 
 
@@ -16,27 +20,52 @@ Performs right to left function composition
 
 Create a curried function
 
+**Parameters**
+
+**curry**: `function`, Create a curried function
+
 **Returns**: `function`
 
 
-### fork() 
+### fork(lastly, func1, func2) 
 
 Returns a function for performing a forking operation
+Also known as "converge"
+
+**Parameters**
+
+**lastly**: `function`, Returns a function for performing a forking operation
+Also known as "converge"
+
+**func1**: `function`, Returns a function for performing a forking operation
+Also known as "converge"
+
+**func2**: `function`, Returns a function for performing a forking operation
 Also known as "converge"
 
 **Returns**: `function`
 
 
-### partial() 
+### partial(func, arguments) 
 
 Create a partially applied function
+
+**Parameters**
+
+**func**: `function`, Create a partially applied function
+
+**arguments**: `*`, Create a partially applied function
 
 **Returns**: `function`
 
 
-### compose() 
+### pipe() 
 
 Performs left to right function composition
+
+**Parameters**
+
+**pipe**: `function`, Performs left to right function composition
 
 **Returns**: `function`
 
@@ -77,6 +106,7 @@ Returns the previous element in an array in a cyclic manner
 
 **index**: `Number`, Returns the previous element in an array in a cyclic manner
 
+**Returns**: `*`
 
 
 ### next(arr, index) 
@@ -89,6 +119,7 @@ Returns the next element in an array in a cyclic manner
 
 **index**: `Number`, Returns the next element in an array in a cyclic manner
 
+**Returns**: `*`
 
 
 ### last(arr) 
@@ -99,14 +130,11 @@ Returns the last element in an array
 
 **arr**: `Array`, Returns the last element in an array
 
+**Returns**: `*`
 
 
 
 * * *
-
-
-
-
 
 
 
