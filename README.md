@@ -2,6 +2,7 @@
 A small functional programming utility library for Node.js.
 
 [![Build Status](https://travis-ci.org/DungBeetleBASH/fn.png)](https://travis-ci.org/DungBeetleBASH/fn)
+[![npm version](https://badge.fury.io/js/%40dbb%2Ffn.png)](https://badge.fury.io/js/%40dbb%2Ffn)
 
 ## Installation
 
