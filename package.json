@@ -1,6 +1,6 @@
 {
   "name": "@dbb/fn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small functional programming utility library for Node.js.",
   "main": "fn.js",
   "scripts": {
