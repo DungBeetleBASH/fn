@@ -110,6 +110,20 @@ Returns the last element in an array
 **Returns**: `Mixed`
 
 
+### range(count, startIndex) 
+
+Returns an array of numbers of length 'count', starting at 'start'
+If a number < 1 is passed as count, an empty array is returned.
+
+**Parameters**
+
+**count**: `Number`
+
+**startIndex**: `Number`
+
+**Returns**: `Array`
+
+
 
 * * *
 
