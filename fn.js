@@ -113,6 +113,28 @@ module.exports = {
 	 */
 	last: function (arr) {
 		return arr[arr.length - 1];
+	},
+
+	/**
+	 * Returns an array of numbers of length 'count', starting at 'start'
+	 * If a number < 1 is passed as count, an empty array is returned.
+	 * @method range
+	 * @param {Number} count
+	 * @param {Number} [startIndex] If undefined, defaults to 0
+	 * @return {Array}
+	 */
+	range: function (count, startIndex) {
+		var start = startIndex || 0,
+			limit = start + parseInt(count, 10),
+			returnArray = [],
+			i;
+		if (count < 1) {
+			return returnArray;
+		}
+		for (i = start; i < limit; i++) {
+			returnArray.push(i);
+		}
+		return returnArray;
 	}
 
 };
