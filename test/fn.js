@@ -83,31 +83,31 @@ describe("fn tests", function() {
 
 	describe("range()", function() {
 		it("Returns an array of length 5, starting at 0", function() {
-			var range = $util.Functional.range(5);
+			var range = fn.range(5);
 			expect(Array.isArray(range)).toBe(true);
 			expect(range[0]).toEqual(0);
 			expect(range[4]).toEqual(4);
 			expect(range[5]).toBe(undefined);
 		});
 		it("Returns an array of length 5, starting at 1", function() {
-			var range = $util.Functional.range(5, 1);
+			var range = fn.range(5, 1);
 			expect(range[0]).toEqual(1);
 			expect(range[4]).toEqual(5);
 			expect(range[5]).toBe(undefined);
 		});
 		it("Returns an array of length 5, starting at -3", function() {
-			var range = $util.Functional.range(5, -3);
+			var range = fn.range(5, -3);
 			expect(range[0]).toEqual(-3);
 			expect(range[4]).toEqual(1);
 			expect(range[5]).toBe(undefined);
 		});
 		it("Returns an array of length 0", function() {
-			var range = $util.Functional.range(-30);
+			var range = fn.range(-30);
 			expect(Array.isArray(range)).toBe(true);
 			expect(range.length).toEqual(0);
 		});
 		it("Returns an array of length 0", function() {
-			var range = $util.Functional.range(-30, 30);
+			var range = fn.range(-30, 30);
 			expect(Array.isArray(range)).toBe(true);
 			expect(range.length).toEqual(0);
 		});
